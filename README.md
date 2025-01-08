@@ -139,7 +139,7 @@ Format: Saved using joblib.
 
 ![WhatsApp Image 2025-01-08 à 23 50 21_25e7871b](https://github.com/user-attachments/assets/43d1c5da-2dcf-45f1-9a99-9825f296955a)
 
-Here are example of the fonctionallities : 
+### Here are example of the fonctionallities : 
 
 ![WhatsApp Image 2025-01-08 à 23 50 21_ab2eefe7](https://github.com/user-attachments/assets/071aaed2-5f01-4ccf-8b82-a69d54d1c555)
 
