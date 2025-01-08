@@ -1,6 +1,7 @@
 # NLP Review Analysis and Prediction Application
 
-This repository contains an NLP-based web application built with **Streamlit**. The app provides functionalities such as sentiment analysis, star rating prediction, topic modeling, and interactive summaries using advanced machine learning and NLP models.
+This project demonstrates a comprehensive end-to-end Natural Language Processing (NLP) pipeline, including supervised and unsupervised learning techniques, designed for analyzing customer reviews.
+The final deliverable is a **Streamlit application** that provides functionalities such as sentiment analysis, star rating prediction, topic modeling, and interactive summaries using advanced machine learning and NLP models.
 
 ---
 
@@ -156,6 +157,53 @@ Format: Saved using joblib.
 ![WhatsApp Image 2025-01-08 à 23 51 27_aa266a57](https://github.com/user-attachments/assets/e7f9c44e-64a1-4ed8-9945-b5860d8e2c09)
 
 ![WhatsApp Image 2025-01-08 à 23 57 13_8ecccf75](https://github.com/user-attachments/assets/b2f86b40-2b4b-4877-b679-9802c51eb0a4)
+
+
+## Technologies and Libraries Used
+
+Programming Language
+
+* Python 3.10+: The main programming language used for data preprocessing, model training, and building the Streamlit application.
+
+Web Framework
+
+* Streamlit: Interactive framework used to develop and deploy the web application.
+
+Natural Language Processing (NLP) Libraries
+
+* TextBlob: For text preprocessing, translation, and sentiment analysis.
+* Transformers: Hugging Face library for advanced NLP pipelines (e.g., summarization and question answering).
+* TensorFlow Hub: For Universal Sentence Encoder (USE) embeddings.
+* Gensim: Used for topic modeling and LDA visualization.
+* NLTK: For tokenization, stopword removal, and text normalization.
+* LanguageTool: For advanced spelling correction.
+
+Machine Learning Libraries
+
+* Scikit-Learn: For building classical ML models (e.g., Random Forest) and feature transformations using TF-IDF vectorizer.
+* SHAP: For explainability and visualizing feature importance in model predictions.
+  
+Deep Learning Framework
+* TensorFlow/Keras: Used for building and saving deep learning models for star rating prediction.
+* Universal Sentence Encoder (USE): Pre-trained embedding model for semantic similarity.
+
+Visualization Libraries
+
+* Matplotlib: For creating basic plots (e.g., distribution of ratings, review lengths).
+* pyLDAvis: For interactive topic modeling visualizations.
+* Seaborn: For advanced data visualizations.
+
+Utilities
+
+* Joblib: For saving and loading trained ML models and vectorizers.
+* NumPy: For numerical computations.
+* Pandas: For data manipulation and analysis.
+* re: Regular expressions for cleaning text data.
+* Other Libraries...
+
+
+### For any questions, you can contact me via LinkedIn : "https://www.linkedin.com/in/houssem-rezgui-/"
+
 
 
 
