@@ -93,3 +93,24 @@ Compared the performance of classical and deep learning models.
 * Explanation: Provides insights into model predictions.
 
 * Information Retrieval: Placeholder for Retrieval-Augmented Generation (RAG) and Question Answering (QA).
+
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Housseem946/NLP-Review-Analysis-Application.git
+cd NLP-Review-Analysis-Application
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+3. Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
