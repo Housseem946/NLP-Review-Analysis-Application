@@ -93,46 +93,43 @@ Open your browser and go to http://localhost:8501.
 The project directory contains the following files and folders:
 
 1. deep_learning_model/
-Purpose: Contains the trained deep learning model for predicting star ratings based on reviews.
-Content:
+Contains the trained deep learning model for predicting star ratings based on reviews.
+
 assets/: Metadata files required by TensorFlow.
 variables/: Model weights and configurations.
 saved_model.pb: Main TensorFlow SavedModel format file.
 tf_model.h5: Optional H5 format file for deep learning model.
 
 3. app.py
-Purpose: Main Streamlit application script to run the interactive web app.
-Key Features:
+Main Streamlit application script to run the interactive web app.
+
 User review analysis, rating predictions, and summarization.
 Includes functionalities for question answering and explainability.
 
 5. cleaned_reviews.csv
-Purpose: The cleaned and preprocessed dataset used for model training and evaluation.
-Content:
+The cleaned and preprocessed dataset used for model training and evaluation.
+
 Processed reviews with additional features like review length and sentiment scores.
 Translated reviews (avis_eng_corrected), ratings (note), and sentiments.
 
-7. Data_cleaning_and_analysis.py
-Purpose: Python script for data cleaning, preprocessing, and exploratory analysis.
+7. Data_cleaning_and_analysis.ipynb
+Notebook for data cleaning, preprocessing, and exploratory analysis.
+
 Key Functions:
 Cleaning raw reviews, handling missing values, and correcting text.
 Generating additional features and preparing the dataset for modeling.
 
 9. random_forest_model.pkl
 Purpose: Trained Random Forest Classifier for predicting star ratings.
-Format: Saved using joblib.
 
 11. rf_sentiment_model.pkl
 Purpose: Random Forest model trained for sentiment analysis (positive, neutral, negative).
-Format: Saved using joblib.
 
 13. tfidf_vectorizer.pkl
 Purpose: TF-IDF vectorizer used for transforming text into numerical features for the star rating prediction model.
-Format: Saved using joblib.
 
 15. tfidf_vectorizer_sentiment.pkl
-Purpose: TF-IDF vectorizer used for transforming text into numerical features for the sentiment analysis model.
-Format: Saved using joblib.
+used for transforming text into numerical features for the sentiment analysis model.
 
 ## 📷 Application Interface
 
@@ -202,7 +199,7 @@ Utilities
 * Other Libraries...
 
 
-### For any questions, you can contact me via LinkedIn : "https://www.linkedin.com/in/houssem-rezgui-/"
+### 🚀 For any questions, you can contact me via LinkedIn : https://www.linkedin.com/in/houssem-rezgui-/
 
 
 
