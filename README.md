@@ -80,16 +80,16 @@ Compared the performance of classical and deep learning models.
 
 ### Results Interpretation
 
-Error Analysis: Visualized confusion matrices for classical models.
+* Error Analysis: Visualized confusion matrices for classical models.
 
-Feature Importance: Identified top features influencing Random Forest predictions.
+* Feature Importance: Identified top features influencing Random Forest predictions.
 
-Embedding Visualization: Reduced dimensions of LSTM embeddings using PCA.
+* Embedding Visualization: Reduced dimensions of LSTM embeddings using PCA.
 
 ### Streamlit Application
 
-Real-Time Prediction: Predicts star ratings and main subjects of reviews.
+* Real-Time Prediction: Predicts star ratings and main subjects of reviews.
 
-Explanation: Provides insights into model predictions.
+* Explanation: Provides insights into model predictions.
 
-Information Retrieval: Placeholder for Retrieval-Augmented Generation (RAG) and Question Answering (QA).
+* Information Retrieval: Placeholder for Retrieval-Augmented Generation (RAG) and Question Answering (QA).
