@@ -60,7 +60,7 @@ This repository contains an NLP-based web application built with **Streamlit**. 
 
 ---
 
-## Installation and Usage
+##  🚀 Installation and Usage
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -87,7 +87,7 @@ streamlit run app.py
 Open your browser and go to http://localhost:8501.
 
 
-## Project Directory Structure
+## 📁 Project Directory Structure
 
 The project directory contains the following files and folders:
 
@@ -133,17 +133,19 @@ Format: Saved using joblib.
 Purpose: TF-IDF vectorizer used for transforming text into numerical features for the sentiment analysis model.
 Format: Saved using joblib.
 
-## Application Interface
+## 📷 Application Interface
 
 ![WhatsApp Image 2025-01-08 à 23 50 20_b9585f1c](https://github.com/user-attachments/assets/1aca5982-bc44-4ac2-ac28-ff8bca72f47b)
 
 ![WhatsApp Image 2025-01-08 à 23 50 21_25e7871b](https://github.com/user-attachments/assets/43d1c5da-2dcf-45f1-9a99-9825f296955a)
 
-### Here are example of the fonctionallities : 
+### Here are some examples of the functionalities :
 
-![WhatsApp Image 2025-01-08 à 23 50 21_ab2eefe7](https://github.com/user-attachments/assets/071aaed2-5f01-4ccf-8b82-a69d54d1c555)
 
-![WhatsApp Image 2025-01-08 à 23 50 21_e22642df](https://github.com/user-attachments/assets/4720b2e4-f8f5-4c5e-955f-f6d631047869)
+![WhatsApp Image 2025-01-08 à 23 50 21_ab2eefe7](https://github.com/user-attachments/assets/071aaed2-5f01-4ccf-8b82-a69d54d1c555)  Rating Prediction
+
+![WhatsApp Image 2025-01-08 à 23 50 21_e22642df](https://github.com/user-attachments/assets/4720b2e4-f8f5-4c5e-955f-f6d631047869)  Sentiment Prediction
+
 
 ![WhatsApp Image 2025-01-08 à 23 50 37_e0929f18](https://github.com/user-attachments/assets/e9d9cdb8-6765-4a3b-be9e-71f1e9fc9287)
 
