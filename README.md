@@ -133,3 +133,8 @@ Format: Saved using joblib.
 Purpose: TF-IDF vectorizer used for transforming text into numerical features for the sentiment analysis model.
 Format: Saved using joblib.
 
+## Application Interface
+
+![WhatsApp Image 2025-01-08 à 23 50 20_b9585f1c](https://github.com/user-attachments/assets/1aca5982-bc44-4ac2-ac28-ff8bca72f47b)
+
+
