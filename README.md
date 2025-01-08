@@ -1,101 +1,70 @@
-# NLP Review Analysis Application
+# NLP Review Analysis and Prediction Application
 
-## Overview
+This repository contains an NLP-based web application built with **Streamlit**. The app provides functionalities such as sentiment analysis, star rating prediction, topic modeling, and interactive summaries using advanced machine learning and NLP models.
 
-This project demonstrates a comprehensive end-to-end Natural Language Processing (NLP) pipeline, including supervised and unsupervised learning techniques, designed for analyzing customer reviews. 
-The final deliverable is a Streamlit application that predicts review sentiments, categorizes reviews into themes, and provides additional insights like semantic similarity and topic modeling.
-
+---
 
 ## Features
 
-### Data Cleaning
+### 1. **Data Cleaning and Preprocessing**
+- Cleaning and standardizing review text:
+  - Removal of punctuation and special characters.
+  - Lowercasing and tokenization.
+  - Spelling correction using `TextBlob` and custom rules.
+- Translation of missing English reviews from French using `TextBlob`.
+- Generated additional features:
+  - Review length.
+  - Sentiment score (polarity).
+- Dataset preparation for supervised tasks:
+  - Star rating classification (1-5 stars).
+  - Sentiment analysis (positive, neutral, negative).
 
-* Tokenization and Preprocessing:
+### 2. **Supervised Learning**
+- **Star Rating Prediction**:
+  - Used a **Random Forest Classifier** trained on `TF-IDF` features.
+  - Predicted ratings based on review content.
+- **Sentiment Analysis**:
+  - Classifies reviews into positive, neutral, or negative sentiments.
+  - Random Forest trained with labeled data for accuracy.
 
-Removed stopwords, punctuation, and unnecessary characters.
+### 3. **Unsupervised Learning**
+- **Topic Modeling**:
+  - Implemented Latent Dirichlet Allocation (LDA) for topic extraction.
+  - Visualized topics using `pyLDAvis`.
 
-Applied tokenization to break text into words.
+### 4. **Embedding and Similarity**
+- Trained **Word2Vec** embeddings to find semantically similar words.
+- Performed semantic search using cosine similarity.
 
-* Highlighting Frequent Words and n-grams:
+### 5. **Explainable AI**
+- **SHAP**:
+  - Explained Random Forest predictions with SHAP values.
+  - Displayed key features influencing predictions.
 
-Extracted the most common unigrams and bigrams from the text data.
+### 6. **Interactive Streamlit Application**
+- **Key Functionalities**:
+  - **Rating Prediction**:
+    - Predict the number of stars (1-5) for user-entered reviews.
+  - **Sentiment Prediction**:
+    - Determine if the sentiment is positive, neutral, or negative.
+  - **Summarization**:
+    - Generate summaries for user reviews using pre-trained models.
+  - **Explain Predictions**:
+    - Visualize features influencing star rating predictions.
+  - **RAG-Based Summary**:
+    - Retrieve and summarize similar reviews for a given input.
+  - **Question Answering**:
+    - Answer dataset-related questions using a QA pipeline.
+- **Visualizations**:
+  - Topic distributions and SHAP explanations.
 
-* Spelling Correction:
+---
 
-Used TextBlob for correcting typos in reviews.
+## Installation and Usage
 
-* Translation Cleanup:
-
-Cleaned and verified translated reviews for consistency.
-
-### Topic Modeling
-
-* Latent Dirichlet Allocation (LDA):
-
-Modeled 5 topics based on the reviews using TF-IDF vectorization.
-
-* Interpretation:
-
-Extracted and displayed the top 10 words for each topic.
-
-* Saved Results:
-
-Topics and their associated keywords were saved for further analysis.
-
-### Embedding for Similarity Analysis
-
-* Word2Vec Training:
-
-Trained Word2Vec on tokenized reviews to learn word embeddings.
-
-* Cosine Similarity:
-
-Measured semantic similarity between sample words.
-
-* Visualization:
-
-Used t-SNE for visualizing word embeddings in a 2D space.
-
-* Semantic Search:
-
-Implemented a feature to find the most similar words to a given query.
-
-### Supervised Learning for Sentiment Analysis
-
-* Classical Models:
-
-Trained and evaluated Random Forest and SVM classifiers on TF-IDF features.
-
-* Deep Learning Models:
-
-Implemented an LSTM-based sentiment analysis model with embedding layers.
-
-* Pre-trained Models:
-
-Used Hugging Face's nlptown/bert-base-multilingual-uncased-sentiment for multilingual sentiment classification.
-
-* Comparison:
-
-Compared the performance of classical and deep learning models.
-
-### Results Interpretation
-
-* Error Analysis: Visualized confusion matrices for classical models.
-
-* Feature Importance: Identified top features influencing Random Forest predictions.
-
-* Embedding Visualization: Reduced dimensions of LSTM embeddings using PCA.
-
-### Streamlit Application
-
-* Real-Time Prediction: Predicts star ratings and main subjects of reviews.
-
-* Explanation: Provides insights into model predictions.
-
-* Information Retrieval: Placeholder for Retrieval-Augmented Generation (RAG) and Question Answering (QA).
-
-
-### Installation
+### Prerequisites
+- Python 3.10 or higher
+- Required libraries (install via `pip`):
 
 1. Clone the repository:
 
@@ -115,20 +84,52 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### Technologies Used
+Open your browser and go to http://localhost:8501.
 
-Python Libraries:
 
-* pandas, numpy, TextBlob, scikit-learn, gensim, matplotlib, seaborn
+## Project Directory Structure
 
-Deep Learning:
+The project directory contains the following files and folders:
 
-* TensorFlow/Keras for LSTM.
+1. deep_learning_model/
+Purpose: Contains the trained deep learning model for predicting star ratings based on reviews.
+Content:
+assets/: Metadata files required by TensorFlow.
+variables/: Model weights and configurations.
+saved_model.pb: Main TensorFlow SavedModel format file.
+tf_model.h5: Optional H5 format file for deep learning model.
 
-Hugging Face Transformers:
+3. app.py
+Purpose: Main Streamlit application script to run the interactive web app.
+Key Features:
+User review analysis, rating predictions, and summarization.
+Includes functionalities for question answering and explainability.
 
-* For multilingual sentiment analysis and zero-shot classification.
+5. cleaned_reviews.csv
+Purpose: The cleaned and preprocessed dataset used for model training and evaluation.
+Content:
+Processed reviews with additional features like review length and sentiment scores.
+Translated reviews (avis_eng_corrected), ratings (note), and sentiments.
 
-Streamlit:
+7. Data_cleaning_and_analysis.py
+Purpose: Python script for data cleaning, preprocessing, and exploratory analysis.
+Key Functions:
+Cleaning raw reviews, handling missing values, and correcting text.
+Generating additional features and preparing the dataset for modeling.
 
-* Interactive web application for predictions and insights.
+9. random_forest_model.pkl
+Purpose: Trained Random Forest Classifier for predicting star ratings.
+Format: Saved using joblib.
+
+11. rf_sentiment_model.pkl
+Purpose: Random Forest model trained for sentiment analysis (positive, neutral, negative).
+Format: Saved using joblib.
+
+13. tfidf_vectorizer.pkl
+Purpose: TF-IDF vectorizer used for transforming text into numerical features for the star rating prediction model.
+Format: Saved using joblib.
+
+15. tfidf_vectorizer_sentiment.pkl
+Purpose: TF-IDF vectorizer used for transforming text into numerical features for the sentiment analysis model.
+Format: Saved using joblib.
+
