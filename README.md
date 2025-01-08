@@ -114,3 +114,21 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+### Technologies Used
+
+Python Libraries:
+
+* pandas, numpy, TextBlob, scikit-learn, gensim, matplotlib, seaborn
+
+Deep Learning:
+
+* TensorFlow/Keras for LSTM.
+
+Hugging Face Transformers:
+
+* For multilingual sentiment analysis and zero-shot classification.
+
+Streamlit:
+
+* Interactive web application for predictions and insights.
