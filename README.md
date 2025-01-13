@@ -139,20 +139,28 @@ used for transforming text into numerical features for the sentiment analysis mo
 
 ### Here are some examples of the functionalities :
 
-
-![WhatsApp Image 2025-01-08 à 23 50 21_ab2eefe7](https://github.com/user-attachments/assets/071aaed2-5f01-4ccf-8b82-a69d54d1c555)  Rating Prediction
-
-![WhatsApp Image 2025-01-08 à 23 50 21_e22642df](https://github.com/user-attachments/assets/4720b2e4-f8f5-4c5e-955f-f6d631047869)  Sentiment Prediction
+#### Rating Prediction
+![WhatsApp Image 2025-01-08 à 23 50 21_ab2eefe7](https://github.com/user-attachments/assets/071aaed2-5f01-4ccf-8b82-a69d54d1c555)  
 
 
+#### Sentiment Prediction
+![WhatsApp Image 2025-01-08 à 23 50 21_e22642df](https://github.com/user-attachments/assets/4720b2e4-f8f5-4c5e-955f-f6d631047869)  
+
+#### Review Summary
 ![WhatsApp Image 2025-01-08 à 23 50 37_e0929f18](https://github.com/user-attachments/assets/e9d9cdb8-6765-4a3b-be9e-71f1e9fc9287)
 
+#### Prediction explanation
 ![WhatsApp Image 2025-01-08 à 23 50 51_a3bf51a2](https://github.com/user-attachments/assets/05bc2cba-23c0-47fc-9d6c-5a6d825dcb15)
 
+#### Top 3 Similar Reviews
 ![WhatsApp Image 2025-01-08 à 23 51 04_e425f430](https://github.com/user-attachments/assets/8734c7be-354d-435f-9d85-2424fba90148)
 
+
+#### RAG Based Summary
 ![WhatsApp Image 2025-01-08 à 23 51 27_aa266a57](https://github.com/user-attachments/assets/e7f9c44e-64a1-4ed8-9945-b5860d8e2c09)
 
+
+#### Question about Dataset
 ![WhatsApp Image 2025-01-08 à 23 57 13_8ecccf75](https://github.com/user-attachments/assets/b2f86b40-2b4b-4877-b679-9802c51eb0a4)
 
 
